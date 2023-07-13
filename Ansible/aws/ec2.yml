@@ -8,8 +8,8 @@
     instance_type: t2.micro
     ami: ami-0e472ba40eb589f49
     hosts_file: /etc/ansible/hosts
-    access_key: 
-    secret_key: 
+  vars_files:
+  - awssecret.yml
 
   tasks:
    - name: Create security group
